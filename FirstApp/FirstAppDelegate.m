@@ -6,17 +6,21 @@
 //  Copyright (c) 2014年 ChivialK. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "FirstAppDelegate.h"
+#import "NoteListViewController.h"
 
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
+@synthesize window, navigationController;
             
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [window addSubview:[navigationController view]];
+    [window makeKeyAndVisible];
     return YES;
 }
 
